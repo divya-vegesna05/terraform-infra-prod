@@ -18,15 +18,15 @@ variable "vpc_tags" {
   type = map
   default = {}
 }
-variable "public_cidr" {
+variable "public_subnet_cidr" {
   type = list
   default = ["10.1.1.0/24","10.1.2.0/24"]
 }
-variable "private_cidr" {
+variable "private_subnet_cidr" {
   type = list
   default = ["10.1.11.0/24","10.1.12.0/24"]
 }
-variable "database_cidr" {
+variable "database_subnet_cidr" {
   type = list
   default = ["10.1.21.0/24","10.1.22.0/24"]
 }
